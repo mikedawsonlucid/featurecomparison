@@ -8,7 +8,7 @@ An interactive comparison tool for Lucid Team vs Enterprise plans, designed to h
 - **Dynamic Content Filtering**: Table updates instantly based on selections  
 - **Value-Driven Messaging**: Focuses on security, cost optimization, and business risks
 - **Mobile Responsive**: Works seamlessly on all devices
-- **Fast Loading**: Uses CDN resources for optimal performance
+- **Fast Loading**: Uses CDN resources for optimal performance 
 
 ## Live Demo
 
