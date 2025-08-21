@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucid Enterprise Comparison Tool</title>
+    <meta name="description" content="Interactive comparison tool for Lucid Team vs Enterprise plans">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .category-btn {
+            transition: all 0.2s ease;
+        }
+        .category-btn:hover {
+            transform: translateY(-1px);
+        }
+        .feature-row:hover {
+            background-color: #f9fafb;
+        }
+        /* Custom animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.3s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <div class="max-w-6xl mx-auto p-6 bg-white min-h-screen">
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-gray-900 mb-2">
+                Team vs Enterprise: What Matters to You?
+            </h1>
+            <p class="text-gray-600 mb-6">
+                Select the categories most important to your organization to see relevant differences
+            </p>
+            
+            <!-- Category Selector -->
+            <div class="flex flex-wrap justify-center gap-3 mb-6">
+                <button onclick="toggleCategory('security')" id="security-btn" 
+                        class="category-btn flex items-center gap-2 px-4 py-2 rounded-lg border-2 bg-red-50 border-red-200 text-red-800">
+                    <span class="text-red-600">🛡️</span>
+                    <span class="font-medium text-sm">Security & Compliance</span>
+                </button>
+                <button onclick="toggleCategory('cost')" id="cost-btn"
+                        class="category-btn flex items-center gap-2 px-4 py-2 rounded-lg border-2 bg-green-50 border-green-200 text-green-800">
+                    <span class="text-green-600">💰</span>
+                    <span class="font-medium text-sm">Cost Optimization</span>
+                </button>
+                <button onclick="toggleCategory('control')" id="control-btn"
+                        class="category-btn flex items-center gap-2 px-4 py-2 rounded-lg border-2 bg-gray-50 border-gray-200 text-gray-600">
+                    <span class="text-gray-500">🔒</span>
+                    <span class="font-medium text-sm">IT Control & Management</span>
+                </button>
+                <button onclick="toggleCategory('collaboration')" id="collaboration-btn"
+                        class="category-btn flex items-center gap-2 px-4 py-2 rounded-lg border-2 bg-gray-50 border-gray-200 text-gray-600">
+                    <

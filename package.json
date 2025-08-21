@@ -1,0 +1,23 @@
+{
+  "name": "lucid-enterprise-comparison",
+  "version": "1.0.0",
+  "description": "Interactive comparison tool for Lucid Team vs Enterprise plans",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "python3 -m http.server 8000"
+  },
+  "repository": {
+    "type": "git", 
+    "url": "https://github.com/mikedawsonlucid/featurecomparison.git"
+  },
+  "homepage": "https://mikedawsonlucid.github.io/featurecomparison/",
+  "keywords": [
+    "lucid",
+    "comparison",
+    "enterprise",
+    "sales-tool"
+  ],
+  "author": "Mike Dawson",
+  "license": "MIT"
+}
