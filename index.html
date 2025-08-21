@@ -56,4 +56,266 @@
                 </button>
                 <button onclick="toggleCategory('collaboration')" id="collaboration-btn"
                         class="category-btn flex items-center gap-2 px-4 py-2 rounded-lg border-2 bg-gray-50 border-gray-200 text-gray-600">
-                    <
+                    <span class="text-gray-500">👥</span>
+                    <span class="font-medium text-sm">Team Collaboration</span>
+                </button>
+                <button onclick="toggleCategory('enterprise')" id="enterprise-btn"
+                        class="category-btn flex items-center gap-2 px-4 py-2 rounded-lg border-2 bg-gray-50 border-gray-200 text-gray-600">
+                    <span class="text-gray-500">🏢</span>
+                    <span class="font-medium text-sm">Enterprise Features</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Cost Savings Banner -->
+        <div id="cost-banner" class="bg-green-50 border-2 border-green-200 rounded-lg p-4 mb-6 text-center fade-in">
+            <div class="flex items-center justify-center gap-2 text-green-800">
+                <span class="text-green-600">💰</span>
+                <span class="font-bold text-lg">40% average cost reduction + unlimited free viewers</span>
+            </div>
+        </div>
+
+        <!-- Comparison Table -->
+        <div id="comparison-table" class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm">
+            <div class="grid grid-cols-4 bg-gray-50 border-b border-gray-200">
+                <div class="p-4 font-bold text-gray-900">Feature</div>
+                <div class="p-4 font-bold text-gray-900 text-center">Team Plan</div>
+                <div class="p-4 font-bold text-gray-900 text-center">Enterprise</div>
+                <div class="p-4 font-bold text-red-700 text-center">Risk/Impact</div>
+            </div>
+            
+            <!-- Security Features -->
+            <div class="feature-row security-feature grid grid-cols-4 border-b border-gray-100">
+                <div class="p-4 flex items-center gap-2">
+                    <span class="text-red-600">🛡️</span>
+                    <span class="font-medium">Domain Control</span>
+                </div>
+                <div class="p-4 text-center text-gray-600">
+                    Anyone can access with company email
+                </div>
+                <div class="p-4 text-center text-green-700 font-medium">
+                    IT controls exactly who gets access
+                </div>
+                <div class="p-4 text-center text-red-600 text-sm font-medium">
+                    HIGH RISK: Ex-employees retain access
+                </div>
+            </div>
+
+            <div class="feature-row security-feature grid grid-cols-4 border-b border-gray-100">
+                <div class="p-4 flex items-center gap-2">
+                    <span class="text-red-600">🛡️</span>
+                    <span class="font-medium">Single Sign-On (SSO)</span>
+                </div>
+                <div class="p-4 text-center text-gray-600">
+                    Email/password only
+                </div>
+                <div class="p-4 text-center text-green-700 font-medium">
+                    Full SSO with existing systems
+                </div>
+                <div class="p-4 text-center text-red-600 text-sm font-medium">
+                    Security gap in authentication
+                </div>
+            </div>
+
+            <!-- Cost Features -->
+            <div class="feature-row cost-feature grid grid-cols-4 border-b border-gray-100">
+                <div class="p-4 flex items-center gap-2">
+                    <span class="text-green-600">💰</span>
+                    <span class="font-medium">Viewer Access</span>
+                </div>
+                <div class="p-4 text-center text-gray-600">
+                    $8-15/month per viewer
+                </div>
+                <div class="p-4 text-center text-green-700 font-medium">
+                    Unlimited free viewers
+                </div>
+                <div class="p-4 text-center text-red-600 text-sm font-medium">
+                    60-80% overpaying for view-only users
+                </div>
+            </div>
+
+            <div class="feature-row cost-feature grid grid-cols-4 border-b border-gray-100">
+                <div class="p-4 flex items-center gap-2">
+                    <span class="text-green-600">💰</span>
+                    <span class="font-medium">Creator Pricing</span>
+                </div>
+                <div class="p-4 text-center text-gray-600">
+                    $8-15/month per creator
+                </div>
+                <div class="p-4 text-center text-green-700 font-medium">
+                    $12.75/month (with discount)
+                </div>
+                <div class="p-4 text-center text-red-600 text-sm font-medium">
+                    Pay only for people who create
+                </div>
+            </div>
+
+            <!-- Control Features -->
+            <div class="feature-row control-feature grid grid-cols-4 border-b border-gray-100" style="display: none;">
+                <div class="p-4 flex items-center gap-2">
+                    <span class="text-blue-600">🔒</span>
+                    <span class="font-medium">User Provisioning</span>
+                </div>
+                <div class="p-4 text-center text-gray-600">
+                    Manual user management
+                </div>
+                <div class="p-4 text-center text-green-700 font-medium">
+                    Automatic with SCIM 2.0
+                </div>
+                <div class="p-4 text-center text-red-600 text-sm font-medium">
+                    Unauthorized users go undetected
+                </div>
+            </div>
+
+            <div class="feature-row control-feature grid grid-cols-4 border-b border-gray-100" style="display: none;">
+                <div class="p-4 flex items-center gap-2">
+                    <span class="text-blue-600">🔒</span>
+                    <span class="font-medium">Document Retention</span>
+                </div>
+                <div class="p-4 text-center text-gray-600">
+                    No retention policies
+                </div>
+                <div class="p-4 text-center text-green-700 font-medium">
+                    Automated retention & deletion
+                </div>
+                <div class="p-4 text-center text-red-600 text-sm font-medium">
+                    Compliance violations possible
+                </div>
+            </div>
+
+            <!-- Collaboration Features -->
+            <div class="feature-row collaboration-feature grid grid-cols-4 border-b border-gray-100" style="display: none;">
+                <div class="p-4 flex items-center gap-2">
+                    <span class="text-purple-600">👥</span>
+                    <span class="font-medium">Corporate Templates</span>
+                </div>
+                <div class="p-4 text-center text-gray-600">
+                    Individual templates only
+                </div>
+                <div class="p-4 text-center text-green-700 font-medium">
+                    Centralized brand templates
+                </div>
+                <div class="p-4 text-center text-red-600 text-sm font-medium">
+                    Brand inconsistency
+                </div>
+            </div>
+
+            <div class="feature-row collaboration-feature grid grid-cols-4 border-b border-gray-100" style="display: none;">
+                <div class="p-4 flex items-center gap-2">
+                    <span class="text-purple-600">👥</span>
+                    <span class="font-medium">Team Spaces</span>
+                </div>
+                <div class="p-4 text-center text-gray-600">
+                    Basic folder organization
+                </div>
+                <div class="p-4 text-center text-green-700 font-medium">
+                    Enterprise-wide team spaces
+                </div>
+                <div class="p-4 text-center text-red-600 text-sm font-medium">
+                    Poor content organization
+                </div>
+            </div>
+
+            <!-- Enterprise Features -->
+            <div class="feature-row enterprise-feature grid grid-cols-4 border-b border-gray-100" style="display: none;">
+                <div class="p-4 flex items-center gap-2">
+                    <span class="text-orange-600">🏢</span>
+                    <span class="font-medium">Premium Integrations</span>
+                </div>
+                <div class="p-4 text-center text-gray-600">
+                    Basic connectors only
+                </div>
+                <div class="p-4 text-center text-green-700 font-medium">
+                    AWS, Azure, GCP, Salesforce
+                </div>
+                <div class="p-4 text-center text-red-600 text-sm font-medium">
+                    Limited enterprise system integration
+                </div>
+            </div>
+
+            <div class="feature-row enterprise-feature grid grid-cols-4 border-b border-gray-100" style="display: none;">
+                <div class="p-4 flex items-center gap-2">
+                    <span class="text-orange-600">🏢</span>
+                    <span class="font-medium">Advanced Data Features</span>
+                </div>
+                <div class="p-4 text-center text-gray-600">
+                    Static diagrams
+                </div>
+                <div class="p-4 text-center text-green-700 font-medium">
+                    Live data linking & refresh
+                </div>
+                <div class="p-4 text-center text-red-600 text-sm font-medium">
+                    Outdated information in diagrams
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const activeCategories = new Set(['security', 'cost']);
+
+        const categoryStyles = {
+            security: {
+                active: 'bg-red-50 border-red-200 text-red-800',
+                inactive: 'bg-gray-50 border-gray-200 text-gray-600'
+            },
+            cost: {
+                active: 'bg-green-50 border-green-200 text-green-800',
+                inactive: 'bg-gray-50 border-gray-200 text-gray-600'
+            },
+            control: {
+                active: 'bg-blue-50 border-blue-200 text-blue-800',
+                inactive: 'bg-gray-50 border-gray-200 text-gray-600'
+            },
+            collaboration: {
+                active: 'bg-purple-50 border-purple-200 text-purple-800',
+                inactive: 'bg-gray-50 border-gray-200 text-gray-600'
+            },
+            enterprise: {
+                active: 'bg-orange-50 border-orange-200 text-orange-800',
+                inactive: 'bg-gray-50 border-gray-200 text-gray-600'
+            }
+        };
+
+        function toggleCategory(category) {
+            const btn = document.getElementById(category + '-btn');
+            
+            if (activeCategories.has(category)) {
+                activeCategories.delete(category);
+                btn.className = btn.className.replace(categoryStyles[category].active, categoryStyles[category].inactive);
+            } else {
+                activeCategories.add(category);
+                btn.className = btn.className.replace(categoryStyles[category].inactive, categoryStyles[category].active);
+            }
+            
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            // Show/hide cost banner
+            const costBanner = document.getElementById('cost-banner');
+            costBanner.style.display = activeCategories.has('cost') ? 'block' : 'none';
+            
+            // Show/hide feature rows with animation
+            const allCategories = ['security', 'cost', 'control', 'collaboration', 'enterprise'];
+            allCategories.forEach(category => {
+                const features = document.querySelectorAll('.' + category + '-feature');
+                features.forEach(feature => {
+                    if (activeCategories.has(category)) {
+                        feature.style.display = 'grid';
+                        feature.classList.add('fade-in');
+                    } else {
+                        feature.style.display = 'none';
+                        feature.classList.remove('fade-in');
+                    }
+                });
+            });
+        }
+
+        // Initialize display on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateDisplay();
+        });
+    </script>
+</body>
+</html>
