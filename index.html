@@ -93,8 +93,8 @@
                     <span class="font-medium">Cost optimization</span>
                 </button>
                 <button onclick="toggleCategory('control')" id="control-btn"
-                        class="category-btn flex items-center gap-2 px-5 py-3 rounded-lg border-2 bg-gray-50 border-gray-200 text-gray-600">
-                    <span class="text-gray-500 text-lg">🔒</span>
+                        class="category-btn flex items-center gap-2 px-5 py-3 rounded-lg border-2 bg-blue-50 border-blue-200 text-blue-800">
+                    <span class="text-blue-500 text-lg">🔒</span>
                     <span class="font-medium">IT control & management</span>
                 </button>
                 <button onclick="toggleCategory('collaboration')" id="collaboration-btn"
@@ -103,8 +103,8 @@
                     <span class="font-medium">Team collaboration</span>
                 </button>
                 <button onclick="toggleCategory('lucidspark')" id="lucidspark-btn"
-                        class="category-btn flex items-center gap-2 px-5 py-3 rounded-lg border-2 bg-purple-50 border-purple-200 text-purple-800">
-                    <span class="text-purple-600 text-lg">🎨</span>
+                        class="category-btn flex items-center gap-2 px-5 py-3 rounded-lg border-2 bg-gray-50 border-gray-200 text-gray-600">
+                    <span class="text-gray-500 text-lg">🎨</span>
                     <span class="font-medium">Lucidspark access</span>
                 </button>
                 <button onclick="toggleCategory('enterprise')" id="enterprise-btn"
@@ -199,7 +199,7 @@
             </div>
 
             <!-- Control Features -->
-            <div class="feature-row control-feature grid grid-cols-4 border-b border-gray-100" style="display: none;">
+            <div class="feature-row control-feature grid grid-cols-4 border-b border-gray-100">
                 <div class="p-5 flex items-center gap-3">
                     <span class="text-blue-600 text-lg">🔒</span>
                     <span class="font-medium">User provisioning</span>
@@ -215,7 +215,7 @@
                 </div>
             </div>
 
-            <div class="feature-row control-feature grid grid-cols-4 border-b border-gray-100" style="display: none;">
+            <div class="feature-row control-feature grid grid-cols-4 border-b border-gray-100">
                 <div class="p-5 flex items-center gap-3">
                     <span class="text-blue-600 text-lg">🔒</span>
                     <span class="font-medium">Document retention</span>
@@ -265,7 +265,7 @@
             </div>
 
             <!-- Lucidspark Access Features -->
-            <div class="feature-row lucidspark-feature grid grid-cols-4 border-b border-gray-100">
+            <div class="feature-row lucidspark-feature grid grid-cols-4 border-b border-gray-100" style="display: none;">
                 <div class="p-5 flex items-center gap-3">
                     <span class="text-purple-600 text-lg">🎨</span>
                     <span class="font-medium">Lucidspark access</span>
@@ -281,7 +281,7 @@
                 </div>
             </div>
 
-            <div class="feature-row lucidspark-feature grid grid-cols-4 border-b border-gray-100">
+            <div class="feature-row lucidspark-feature grid grid-cols-4 border-b border-gray-100" style="display: none;">
                 <div class="p-5 flex items-center gap-3">
                     <span class="text-purple-600 text-lg">🎨</span>
                     <span class="font-medium">Brainstorming & ideation</span>
@@ -297,7 +297,7 @@
                 </div>
             </div>
 
-            <div class="feature-row lucidspark-feature grid grid-cols-4 border-b border-gray-100">
+            <div class="feature-row lucidspark-feature grid grid-cols-4 border-b border-gray-100" style="display: none;">
                 <div class="p-5 flex items-center gap-3">
                     <span class="text-purple-600 text-lg">🎨</span>
                     <span class="font-medium">Visual Activities & facilitation</span>
@@ -349,7 +349,7 @@
     </div>
 
     <script>
-        const activeCategories = new Set(['security', 'cost', 'lucidspark']);
+        const activeCategories = new Set(['security', 'cost', 'control']);
 
         const categoryStyles = {
             security: {
